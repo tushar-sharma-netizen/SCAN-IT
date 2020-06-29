@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LogOut" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPDATE PROFILE" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/generate_barcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/generate"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/save_barcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/save"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/qr_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name" />
+
+    <Button
+        android:id="@+id/adddetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" SCAN QR" />
+
+</LinearLayout>
